@@ -12,6 +12,6 @@ service = Service(os.environ.get("CHROMEDRIVER_PATH"))
 driver = webdriver.Chrome(options=chrome_options, service=service)
 
 # Now you can start using Selenium
-driver.get("https://www.google.com'
+driver.get("https://www.google.com")
 print(driver.page_source)
 
