@@ -8,6 +8,6 @@ chrome_options.add_argument("--headless")
 chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--no-sandbox")
 service = Service(os.environ.get("CHROMEDRIVER_PATH"))
-driver = webdriver.Chrome(chrome_options=options, service=service)
+driver = webdriver.Chrome(options=chrome_options, service=service)
 
 # Now you can start using Selenium
